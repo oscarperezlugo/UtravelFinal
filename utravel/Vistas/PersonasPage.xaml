@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.PersonasPage"  BackgroundImageSource="fondo.png">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+                <!--<Image Source="fondo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="5"/>-->
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+
+                <Picker x:Name="Personas"  Grid.Column="2" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title">
+                    <Picker.Items>
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                        <x:String>5</x:String>
+                        <x:String>6</x:String>
+                        <x:String>7</x:String>
+                        <x:String>8</x:String>
+                        <x:String>9</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                        <x:String>13</x:String>
+                        <x:String>14</x:String>
+                        <x:String>15</x:String>
+                        <x:String>16</x:String>
+                        <x:String>17</x:String>
+                        <x:String>18</x:String>
+                        <x:String>19</x:String>
+                        <x:String>20</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Picker x:Name="Carros"  Grid.Column="2" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                        <x:String>5</x:String>
+                    </Picker.Items>
+                </Picker>
+                <!--<Entry x:Name="Buses" Keyboard="Numeric" Grid.Column="2" Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Title"/>-->
+                <Label Text="&#xf500;" FontFamily="{StaticResource FontAwesomeSolid}" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black"/>
+                <Label Text="&#xf1b9;" FontFamily="{StaticResource FontAwesomeSolid}" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black"/>
+                <!--<Label Text="&#xf017;" FontFamily="{StaticResource FontAwesomeSolid}" Grid.Column="1" Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black"/>-->
+                <Label Text="CANTIDAD DE PERSONAS" Grid.Column="0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black"/>
+                <Label Text="VEHICULOS" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black"/>
+                <!--<Label Text="TIEMPO POR PUNTO" Grid.Column="0" Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black"/>-->
+                <Button Text="SIGUIENTE" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="Siguiente_Clicked" CornerRadius="30"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.infootavalos"  BackgroundImageSource="fondo.png">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2.5*"/>
+                    <RowDefinition Height="1.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="RESTAURANT" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="SERVICIOS" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="FOTOGRAFIA" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="ARTE" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="HISTORIA" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="NATURALEZA" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="MONUMENTO" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="&#xf2e7;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf7bd;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf030;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf53f;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf66f;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf06c;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf5a6;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf00c;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf00c;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf00c;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf05e;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf00c;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf00c;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf00c;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="La verdadera belleza de Otavalo reside en su gente, los indígenas Otavaleños. El Mercado de Artesanías que hace famosa a esta ciudad es, sin dudas, uno de los más espectaculares de toda Sudamérica." FontSize="Small" TextColor="Black" BackgroundColor="Transparent" Grid.Row="10" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3"/>
+                <Button Text="VOLVER" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="Siguiente_Clicked" CornerRadius="30" />
+                <Label Text="HORARIO: 9 AM - 5:30 PM" FontSize="Small" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="ENTRADA Valor $: Gratis" FontSize="Small" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="TIEMPO RECOMENDADO 4(hrs)" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

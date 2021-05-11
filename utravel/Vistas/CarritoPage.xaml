@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.CarritoPage" BackgroundImageSource="fondo.png">
+    <ContentPage.Content>
+        <StackLayout  Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="PUNTOS" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="DISTANCIA(Kms)" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="PERSONAS" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="CARROS" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="TIEMPO POR PUNTO(Hr)" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="GASEOSAS" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="MONTO" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="TIEMPO(Hr)" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="&#xf3c5;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf018;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf0c0;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf1b9;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf017;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf561;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf53b;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf017;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Puntos" FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Distancia" FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Personas"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Carros"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Buses"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Gaseosas"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Monto"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="Tiempo"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="7" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="PAGAR" FontSize="Medium"  TextColor="White" BackgroundColor="Black" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill"  CornerRadius="30" Clicked="Pagar_Clicked" Margin="1"/>
+                <Button Text="VOLVER" FontSize="Medium"  TextColor="White" BackgroundColor="Black" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill"  CornerRadius="30" Clicked="Siguiente_Clicked" Margin="1"/>
+                <Button Text="CANCELAR" FontSize="Medium"  TextColor="White" BackgroundColor="Red" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill"  CornerRadius="30" Clicked="Cancelar_Clicked" Margin="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

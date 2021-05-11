@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.MitadMundo"
+             BackgroundImageSource="fondo.png">
+    <ContentPage x:Name="MM" BackgroundColor="LightBlue" >
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="mm.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t1" Text="MITAD DEL MUNDO" Grid.ColumnSpan="3" FontAttributes="Bold" FontSize="Title" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info1_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="T">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="tl.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t2" Text="TELEFERICO" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X1_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info2_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check1_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="pan">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="pan.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t3" Text="PANECILLO" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X2_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info3_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check2_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="zoo">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="zoo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t4" Text="ZOOLOGICO" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X3_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info4_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check3_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="cl">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="cl.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t5" Text="CIMA DE LA LIBERTAD" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X4_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info5_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check4_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="ma">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="ma.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t6" Text="MUSEO DEL AGUA" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X5_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info6_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check5_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="maq">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="maq.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t7" Text="MERCADO ARTESANAL" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X6_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info7_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check6_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="min">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="min.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t8" Text="MINDO" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X7_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info8_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check7_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="maqui">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="maqui.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t9" Text="MAQUIPUCUNA" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X8_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info9_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check8_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="quilo">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="quilo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t10" Text="QUILOTOA" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X9_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info10_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check9_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="coto">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="coto.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t11" Text="COTOPAXI" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X10_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info11_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check10_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="pulu">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="pulu.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t12" Text="PULULAHUA" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X11_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info12_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check11_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="bano">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="ban.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t13" Text="BAÑOS" Grid.ColumnSpan="3" FontSize="Title"  FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X12_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info13_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check12_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="ota">
+        <StackLayout  BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="ota.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t14" Text="OTAVALO" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X13_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info14_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check13_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="papa">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="papa.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t15" Text="PAPALLACTA" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X14_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info15_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check14_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="CH">
+        <StackLayout BackgroundColor="LightBlue"  Padding="5">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="LightGray" Padding="0" HasShadow="True"/>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Frame CornerRadius="30" HasShadow="True" IsClippedToBounds="True" Margin="10" Padding="0" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" >
+                    <Image Source="ch.jpg" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Aspect="Fill" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" />
+                </Frame>
+                <Button Text="&#xf07a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Grid.ColumnSpan="3" Clicked="Carrito_Clicked"/>
+                <Button Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Gray" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start" Grid.ColumnSpan="3" Clicked="Usuario_Clicked"/>
+                <Label x:Name="t16" Text="CENTRO HISTORICO" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="&#xf057;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Red" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center" Clicked="X15_Clicked"/>
+                <Button Text="&#xf05a;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Blue" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" Clicked="info16_Clicked"/>
+                <Button Text="&#xf058;" FontSize="45" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Green" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center" Clicked="Check15_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="gaseosas">
+        <StackLayout BackgroundColor="LightBlue" Padding="5">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Image Source="l4.png" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0"/>
+                <Image Source="l3.png" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0"/>
+                <Image Source="l2.png" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0"/>
+                <Image Source="l1.png" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="$ 0.99" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="$ 1.99" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="$ 1.89" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="$ 1.89" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="4" Grid.Column="1"/>
+                <Entry x:Name="Agua" Keyboard="Numeric" Grid.Column="2" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+                <Entry x:Name="Te" Keyboard="Numeric" Grid.Column="2" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+                <Entry x:Name="Light" Keyboard="Numeric" Grid.Column="2" Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+                <Entry x:Name="Normal" Keyboard="Numeric" Grid.Column="2" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+                <Button Text="SIGUIENTE" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="Siguiente_Clicked" CornerRadius="30" />
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="musica">
+        <StackLayout BackgroundColor="LightBlue" Padding="5">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Label Text="&#xf7a6;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="black" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="&#xf130;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="black" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="&#xf001;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="black" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="&#xf3c5;" FontSize="Large" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="black" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Rock" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="Pop" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Latino" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="Local" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="Gray" Grid.Row="4" Grid.Column="1"/>
+                <CheckBox Grid.Column="2" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" />
+                <CheckBox Grid.Column="2" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" />
+                <CheckBox Grid.Column="2" Grid.Row="3" VerticalOptions="Center" HorizontalOptions="Center" />
+                <CheckBox Grid.Column="2" Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button Text="SIGUIENTE" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="Ruta_Clicked" CornerRadius="30" />
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="Ruta">
+        <StackLayout BackgroundColor="LightBlue" Padding="5">
+            <Grid  BackgroundColor="LightBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Label Text="RUTA" Grid.ColumnSpan="3" FontSize="Title" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ListView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" x:Name="RutaFinal" SeparatorColor="White" >
+                    <ListView.Header>
+                        <StackLayout >
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="LUGAR" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="0"/>
+                                <Label Text="DISTANCIA" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1"/>
+                                <Label Text="TIEMPO" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2"/>
+                            </Grid>
+                        </StackLayout>
+                    </ListView.Header>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Margin="1">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Label Text="{Binding Kilometros, StringFormat='{0:F2}'}" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding nombre}" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                                        <Label Text="{Binding TiempoPunto, StringFormat='{0:F2}'}" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End"/>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="CONTINUAR" FontSize="Medium"  TextColor="White" BackgroundColor="Black" Grid.Row="3"  Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="CarritoDOS_Clicked" CornerRadius="30" HeightRequest="50" Margin="1"/>
+                <Button Text="CANCELAR" FontSize="Medium"  TextColor="White" BackgroundColor="Red" Grid.Row="4"  Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="Cancelar_Clicked" CornerRadius="30" HeightRequest="50" Margin="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>

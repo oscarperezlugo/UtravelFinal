@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.FechaPage"  BackgroundImageSource="fondo.png">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                </Grid.RowDefinitions>
+                <!--<Image Source="fondo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="5"/>-->
+                <Image Source="logout2.png" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+                <DatePicker x:Name="DateX" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" />
+                <TimePicker x:Name="TimeX" Grid.Column="1" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" />
+                <Label Text="DIA DEL RECORRIDO(Trip Day)" Grid.Column="0" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black" />
+                <Label Text="HORA DEL RECORRIDO(Trip Hour)" Grid.Column="0" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Small" TextColor="Black" />
+                <Button Text="IR YA" FontSize="Large"  TextColor="White" BackgroundColor="Gray" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="Siguiente_Clicked" CornerRadius="30" />
+                <Button Text="SIGUIENTE" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Fill" Clicked="Siguiente_Clicked" CornerRadius="30" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

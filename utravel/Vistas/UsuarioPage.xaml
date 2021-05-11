@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.UsuarioPage"  BackgroundImageSource="fondo.png">
+    <ContentPage.Content>
+        <StackLayout Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="U-Travael ID" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="NOMBRE" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="TELEFONO" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="FECHA" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="ORIGEN" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="EMAIL" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="USUARIO" FontSize="Medium" FontAttributes="Bold" TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"/>
+                <Label Text="&#xf2c2;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf5b7;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf095;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf073;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf0a4;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf0e0;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="&#xf007;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="id" FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="nombre" FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="apellido"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="2" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="fecha"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="3" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="origen"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="4" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="email"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="5" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label x:Name="usuario"  FontSize="Micro"  TextColor="Black" BackgroundColor="Transparent" Grid.Row="6" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Button Text="POLITICAS DE PRIVACIDAD" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill"  CornerRadius="30" Clicked="Politicas_Clicked"/>
+                <Button Text="VOLVER" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill"  CornerRadius="30" Clicked="Siguiente_Clicked"  />
+                <Button Text="RECOMENDACIONES" FontSize="Large"  TextColor="White" BackgroundColor="Black" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill"  CornerRadius="30" Clicked="Reco_Clicked"  />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

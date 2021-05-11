@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.RegistroPage">
+    <ContentPage x:Name="paso1">
+        <StackLayout BackgroundColor="LightBlue" >
+            <Grid Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--<Image Source="fondo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0"  Grid.RowSpan="7"/>-->
+                <Image Source="logout2.png" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" />
+                <!--<Entry x:Name="nombredeusuario" Grid.Row="1" Placeholder="USUARIO" TextColor="Gray" />-->
+                <Entry x:Name="email" Grid.Row="2" Placeholder="EMAIL" TextColor="Gray" />
+                <Entry x:Name="contrasena" Grid.Row="3" Placeholder="PASSWORD" TextColor="Gray" IsPassword="True" />
+                <Entry x:Name="conficontrasena" Grid.Row="4" Placeholder="CONFIRMAR" TextColor="Gray" IsPassword="True" />
+                <Button BackgroundColor="Black" Grid.Row="5" Text="SIGUIENTE" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="20" Clicked="Siguiente_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage x:Name="paso2">
+        <StackLayout BackgroundColor="LightBlue">
+            <Grid Padding="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--<Image Source="fondo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0"  Grid.RowSpan="7"/>-->
+                <Image Source="logout2.png" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" />
+                <Entry x:Name="nombre" Grid.Row="1" Placeholder="NOMBRE" TextColor="Gray" />
+                <Entry x:Name="apellido" Grid.Row="2" Placeholder="APELLIDO" TextColor="Gray"  />
+                <Entry x:Name="telefono" Grid.Row="3" Placeholder="TELEFONO" TextColor="Gray"  />
+                <!--<Entry x:Name="pais" Grid.Row="4" Placeholder="PAIS" TextColor="Gray"  />-->
+                <Button BackgroundColor="Black" Grid.Row="5" Text="REGISTRARSE" TextColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="20" Clicked="Registro_Clicked" />
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>

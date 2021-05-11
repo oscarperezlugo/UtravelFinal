@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="utravel.Vistas.RecomendacionesPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="5">
+            <Grid BackgroundColor="Black">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="RECOMENDACIONES" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"/>
+            </Grid>
+            <ScrollView>
+                <Grid BackgroundColor="White">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="9*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="
+a.	Recuerda controlar tu tiempo de espera tanto en tu paseo como en tu hora de comida en el lugar de arribo.
+b.	Escoge 1 sitio turístico fuera de la ciudad (si es posible escoger dos sitios que quedan en la misma ruta y bloquear a dos sitias que quedas muy distante: Ejemplo: Quilotoa y Cotopaxi quedan en la misma ruta. Solo si es posible)
+c.	Las paradas pertinentes deben ser dentro de la ruta seleccionada
+d.	NO INCLUYEN ENTRADAS, COMIDAS / BEBIDAS
+
+" FontSize="Large" TextColor="Gray"/>
+
+                </Grid>
+            </ScrollView>
+            <Grid BackgroundColor="White" Margin="0,0,0,3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Button  Grid.Row="1"   Text="VOLVER"  Clicked="Volver_Clicked" BackgroundColor="Black" TextColor="White" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Fill" CornerRadius="30"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
